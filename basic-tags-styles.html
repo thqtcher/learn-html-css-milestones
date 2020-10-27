@@ -3,35 +3,37 @@
 <head>
   <title>Basic Tags</title>
   <style>
-    body {background-color: Black;}
-    h1{
-      color: White;
-    }
-    #red{
+    .red{
       color: Red;
     }
-    #orange{
+    .orange{
       color: Orange;
     }
-    #yellow{
+    .yellow{
       color: Yellow;
     }
-    #green{
+    .green{
       color: Green;
     }
-    #blue{
+    .blue{
       color: Blue;
     }
-    #purple{
+    .purple{
       color: Purple;
+    }
+    #block-level > #purple{
+      color: Purple;
+    }
+    .border{
+      border-style: double;
     }
   </style>
 </head>
 <body>
       <h1>Basic Tags</h1>
-      <section id="red">
-        <h2>Block-level text tags:</h2>
-          <p>This is a paragraph tag used to display text in paragraph form.</p>
+      <section id="block-level">
+        <h2 id="purple">Block-level text tags:</h2>
+          <p class="red">This is a paragraph tag used to display text in paragraph form.</p>
           <blockquote cite="https://www.google.com">
             This is a blockquote tag used generally to cite a website.
           </blockquote>
@@ -39,9 +41,9 @@
             This is a pre tag used to display text in a fixed-width font.
           </pre>
       </section>
-      <section id="orange">
+      <section id="inline">
         <h2>Inline text tags:</h2>
-          <p>The em tag is used to <em>emphasize</em> certain words in a block
+          <p>The em tag is used to <em class="orange">emphasize</em> certain words in a block
           of text. In this example the em tag is used to emphasize the word
           emphasize. The i tag is used to <i>italicize</i> certain words in a
           block of text. In this example the i tag is used to italicize the word
@@ -53,7 +55,7 @@
           is used to add a functional <code>button</code>. In this
           example the code tag is used to add a button called button.</p>
       </section>
-      <section id="yellow">
+      <section id="link">
         <h2>Link tags:</h2>
           <a href="google.com">This is the "a" tag used to link to another
             website.</a>
@@ -62,9 +64,9 @@
           <img href="https://some-image.png" alt="This is the image tag used to
           display an image on your website.">
       </section>
-      <section id="green">
+      <section class="border" id="header">
         <h2>Header tags:</h2>
-          <header>This is the header tag</header>
+          <header class="orange">This is the header tag</header>
           <h1>This is the h1 tag</h1>
           <h2>This is the h2 tag</h2>
           <h3>This is the h3 tag</h3>
@@ -72,10 +74,10 @@
           <h5>This is the h5 tag</h5>
           <h6>This is the h6 tag</h6>
       </section>
-      <section id="blue">
+      <section id="list">
         <h2>List tags:</h2>
           <ul>
-            <li>Unordered list item 1</li>
+            <li class="yellow">Unordered list item 1</li>
             <li>Unordered list item 2</li>
             <li>Unordered list item 3</li>
             <li>Unordered list item 4</li>
@@ -91,16 +93,16 @@
             <li> <p>Paragraph tag inside li tag</p> </li>
           </ol>
       </section>
-      <section id="purple">
-        <h2>Table tags:</h2>
+      <section class="border" id="table">
+        <h2 class="green">Table tags:</h2>
           <table>
             <tr>
-              <th>th tag 1 (tr tag 1)</th>
+              <th class="blue">th tag 1 (tr tag 1)</th>
               <th>th tag 2 (tr tag 1)</th>
               <th>th tag 3 (tr tag 1)</th>
             </tr>
             <tr>
-              <td>td tag 1 (tr tag 2)</td>
+              <td class="purple">td tag 1 (tr tag 2)</td>
               <td>td tag 2 (tr tag 2)</td>
               <td>td tag 3 (tr tag 2)</td>
             </tr>
