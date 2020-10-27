@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <title>Basic CSS</title>
+  <style>
+    body {background-color:black;}
+    h1 {color:red;}
+    p {color:green;}
+    .blue{
+      color: Blue;
+    }
+    #purple{
+      color: Purple;
+    }
+    div p{
+      color: Orange;
+    }
+    div > h4{
+      color: Yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>some red text tag selector</h1>
+    <p>some green text tag selector</p>
+    <p class="blue">
+      some blue text class selector
+    </p>
+    <div id="purple">
+      some purple text ID selector
+      <p>some orange text descendant combinator</p>
+      <h4>some yellow text child combinator</h4>
+    </div>
+</body>
+</html>
